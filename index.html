@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorting Algorithm Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <img src="Images/profile.jpg" alt="Nisha's Photo" class="profile-pic">
+    <div class="intro">
+      <h1>Sorting Algorithm Visualizer</h1>
+      <p>By <strong>Nisha</strong></p>
+      <p>📧 nsaklani_be22@thapar.edu | 🌐 
+        <a href="https://github.com/Nish410" target="_blank">GitHub</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <!-- Control Panel -->
+    <section class="controls-section">
+      <h2>Choose Algorithm</h2>
+
+      <select id="algo-select" onchange="updateExplanation()">
+        <option value="bubble">Bubble Sort</option>
+        <option value="selection">Selection Sort</option>
+        <option value="insertion">Insertion Sort</option>
+        <option value="merge">Merge Sort</option>
+        <option value="quick">Quick Sort</option>
+      </select>
+
+      <label for="speed-range">Speed:</label>
+      <select id="speed-range">
+        <option value="slow">Slow</option>
+        <option value="medium" selected>Medium</option>
+        <option value="fast">Fast</option>
+      </select>
+
+      <div class="buttons">
+        <button onclick="generateBars()">Generate New Array</button>
+        <button onclick="startSort()">Start Sorting</button>
+        <button id="pause-btn" onclick="togglePause()">Pause</button>
+      </div>
+
+      <div class="info-box">
+        <h3>Algorithm Info</h3>
+        <p><strong>Time Complexity:</strong> <span id="time-complexity">-</span></p>
+        <p><strong>Space Complexity:</strong> <span id="space-complexity">-</span></p>
+        <p><strong>Status:</strong> <span id="status">Waiting...</span></p>
+        <p><strong>Steps:</strong> <span id="steps">0</span></p>
+        <p><strong>Time:</strong> <span id="timer">0.00s</span></p>
+      </div>
+
+      <div class="explanation-box">
+        <h3>How It Works</h3>
+        <p id="algorithm-explanation">Choose an algorithm to see how it works.</p>
+      </div>
+    </section>
+
+    <!-- Visualizer Area -->
+    <section class="visualizer-section">
+      <div id="bar-container"></div>
+
+      <!-- Legend Below Bars -->
+      <div class="legend">
+        <span><span class="bar legend-bar" style="background: linear-gradient(to top, #00bfff, #00ffff);"></span> Unsorted</span>
+        <span><span class="bar legend-bar comparing"></span> Comparing</span>
+        <span><span class="bar legend-bar sorted"></span> Sorted</span>
+        <span><span class="bar legend-bar pivot"></span> Pivot</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
