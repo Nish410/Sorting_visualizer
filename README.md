@@ -6,11 +6,12 @@ Welcome to the **Sorting Algorithm Visualizer**! This interactive web applicatio
 
 This project showcases my understanding of fundamental Data Structures and Algorithms (DSA) and my ability to build interactive front-end applications.
 
-# Live Demo
+How to View:
 
-Experience the visualizer in action!
+My project is deployed using GitHub Pages and can be accessed directly:
 
-*[Click here to view the live demo!](https://nish410.github.io/Sorting_visualizer/).
+* Live Website: [https://nish410.github.io/Sorting_visualizer/]
+
 
 # Features
 
