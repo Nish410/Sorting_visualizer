@@ -10,7 +10,7 @@ This project showcases my understanding of fundamental Data Structures and Algor
 
 Experience the visualizer in action!
 
-*[Click here to view the live demo!](https://Nish410.github.io/sorting_visualizer/)
+*[Click here to view the live demo!](https://Nish410.github.io/sorting_visualizer/).
 
 # Features
 
